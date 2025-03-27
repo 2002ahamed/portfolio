@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafish Ahamed Apu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2f79466d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="Home">
+            </a>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <!-- <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i> -->
+            </ul>
+            <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+        </nav>
+        <div class="header-text">
+          <p>Aspiring Data Scientist</p>
+          <h1>Hello, This is <span>Nafish</span> <br>Ahamed Apu From Bangladesh</h1>
+        </div>
+        <a href="images/Nafish_Ahamed_Apu_Resume.pdf" download class="btn btn2">Download CV</a>
+    </div>
+  </div> 
+<!--   -----------------about---------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm aspiring Electronics & Telecommunication Engineer with a focus on AI, ML, and MERN stack
+            web development. Driven by a passion for taking initiatives and leading projects, I thrive in
+            dynamic environments that foster continuous learning and development. Eager to apply my
+            technical skills and innovative mindset to contribute to my country’s technological growth
+            and advancement.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('achievement')">Achievements</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <!-- achievement -->
+          <div class="tab-contents active-tab" id="achievement">
+            <div class="cert-container">
+              <!-- Aspire Leaders Program Certificate -->
+              <div class="cert-card">
+                  <img src="images/aspire_logo.png" alt="Aspire Institute">
+                  <h3>Completion Certificate</h3>
+                  <p>2024 Aspire Leaders Program</p>
+                  <span class="org">Aspire Institute</span>
+                  <a href="https://drive.google.com/file/d/1t3FuaAe3EREw5FAUrX0XcnY6lxc9q_2K/view?usp=sharing" target="_blank" class="view-cert">View Certificate</a>
+              </div>
+      
+              <!-- Amra Notun Changemakers Certificate -->
+              <div class="cert-card">
+                  <img src="images/ann.png" alt="Brac ANN">
+                  <h3>Graduated from ANCP</h3>
+                  <p>Amra Notun Changemakers’ Programme 2023</p>
+                  <span class="org">Brac (ANN)</span>
+                  <a href="https://drive.google.com/file/d/1SsT3e0n_tBZ-lvW_Lf2ixismljumbLae/view?usp=sharing" target="_blank" class="view-cert">View Certificate</a>
+              </div>
+            </div>            
+          </div>
+          <!-- experience -->
+          <div class="tab-contents" id="experience">
+            <div class="experience-container">
+              <div class="experience-card">
+                  <img src="images/rew.jpg" alt="REW Publications">
+                  <h3>REW Publications</h3>
+                  <p><em>Writer | Question Setter & Proof Reader</em></p>
+                  <p>August 2024 - Present | Rajshahi</p>
+              </div>
+              <div class="experience-card">
+                  <img src="images/udvash.jpg" alt="Udvash">
+                  <h3>Udvash Academic & Admission Care</h3>
+                  <p><em>Instructor | QNA Teacher & Script Evaluator</em></p>
+                  <p>31 August 2022 - Present | Dhaka</p>
+              </div>
+              <div class="experience-card">
+                  <img src="images/sustho_neer.png" alt="Project Shustho Neer">
+                  <h3>Project Shustho Neer</h3>
+                  <p><em>Project Manager</em></p>
+                  <p>March 2023 - September 2023 | ANN Amra Notun Changemakers’ Programme (Rajshahi Cohort)</p>
+              </div>
+          </div>            
+          </div>
+          <!-- education -->
+          <div class="tab-contents" id="education">
+            <div class="education-container">
+              <div class="education-card">
+                  <img src="images/ruet.jpg" alt="RUET">
+                  <h3>Rajshahi University of Engineering & Technology</h3>
+                  <p><em>B.Sc. in Electronics & Telecommunication Engineering (ETE)</em></p>
+              </div>
+              <div class="education-card">
+                  <img src="images/rajuk.png" alt="Rajuk Uttara Model College">
+                  <h3>Rajuk Uttara Model College</h3>
+                  <p><em>H.S.C. (Science)</em></p>
+              </div>
+              <div class="education-card">
+                  <img src="images/kd_high.jpg" alt="Naogaon Govt. K.D High School">
+                  <h3>Naogaon Govt. K.D High School</h3>
+                  <p><em>S.S.C. (Science)</em></p>
+              </div>
+          </div>
+                          
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------skills-------------------  -->
+   <div id="skill">
+    <div class="container">
+      <h1 class="sub-title">Skills</h1>
+      <h3 class="skill-topic">Programming Languages</h3>
+      <div class="skills-container">
+        <div class="skill-card">
+            <img src="images/python.png" alt="Python">
+            <span>Python</span>
+        </div>
+        <div class="skill-card">
+            <img src="images/mysql.png" alt="MySQL">
+            <span>MySQL</span>
+        </div>
+        <div class="skill-card">
+            <img src="images/cpp.png" alt="C++">
+            <span>C++</span>
+        </div>
+        <div class="skill-card">
+            <img src="images/c.png" alt="C">
+            <span>C</span>
+        </div>
+        <div class="skill-card">
+            <img src="images/html.png" alt="HTML">
+            <span>HTML</span>
+        </div>
+        <div class="skill-card">
+            <img src="images/css.png" alt="CSS">
+            <span>CSS</span>
+        </div>
+        <div class="skill-card">
+            <img src="images/js.png" alt="JavaScript">
+            <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+            <img src="images/php.png" alt="PHP">
+            <span>PHP</span>
+        </div>
+      </div>
+
+            <!-- Office Suite -->
+      <h3 class="skill-topic">Office Suite</h3>
+      <div class="skills-container">
+          <div class="skill-card">
+              <img src="images/ppt.png" alt="Microsoft PowerPoint">
+              <span>Microsoft PowerPoint</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/excel.png" alt="Microsoft Excel">
+              <span>Microsoft Excel</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/word.png" alt="Microsoft Word">
+              <span>Microsoft Word</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/google.png" alt="Google Apps">
+              <span>Google Apps</span>
+          </div>
+      </div>
+
+      <!-- Software & Tools -->
+      <h3 class="skill-topic">Software & Tools</h3>
+      <div class="skills-container">
+          <div class="skill-card">
+              <img src="images/matlab.png" alt="MATLAB & Simulink">
+              <span>MATLAB & Simulink</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/proteus.png" alt="Proteus">
+              <span>Proteus</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/visio.png" alt="Microsoft Visio">
+              <span>Microsoft Visio</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/latex.png" alt="LaTeX">
+              <span>LaTeX</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/davinchi.jpg" alt="DaVinci Resolve">
+              <span>DaVinci Resolve</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/form.png" alt="Google Forms">
+              <span>Google Forms</span>
+          </div>
+          <div class="skill-card">
+              <img src="images/testmoz.png" alt="Testmoz">
+              <span>Testmoz</span>
+          </div>
+      </div>
+
+    </div>
+   </div>
+  <!-- ----------------services------------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
+          <p>Design and develop responsive websites using modern technologies like HTML, CSS, JavaScript, and MERN stack.</p>
+          <a href="#">Learn more</a>
+        </div>
+        
+        <div>
+          <i class="fa-solid fa-file-powerpoint"></i>
+          <h2>Presentation Making with Powerpoint</h2>
+          <p>Create professional and visually appealing presentations for academic, business, and corporate needs.</p>
+          <a href="#">Learn more</a>
+        </div>
+        
+        <div>
+          <i class="fa-solid fa-file"></i>
+          <h2>CV Making with LaTeX</h2>
+          <p>Design high-quality, ATS-friendly CVs and resumes using LaTeX for a professional look.</p>
+          <a href="#">Learn more</a>
+        </div>
+        
+        <div>
+          <i class="fa-solid fa-person-chalkboard"></i>
+          <h2>Instructor</h2>
+          <p>Provide teaching and training services for academic and skill-based subjects, including QNA teaching.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-clipboard-question"></i>
+          <h2>Proof-reading & Question Making</h2>
+          <p>Proofread academic and professional documents with precision. Also, create structured and well-researched questions.</p>
+          <a href="#">Learn more</a>
+        </div>
+        
+        <div>
+          <i class="fa-solid fa-blog"></i>
+          <h2>Blog Writing</h2>
+          <p>Write engaging and SEO-friendly blogs on technology, education, and various other topics.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ---------------projects--------- -->
+
+  <div id="project">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/login.png">
+          <div class="layer">
+            <h3>Website Login</h3>
+            <p>This interface is designed for user login. It includes features like username, password, and login button.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/website.png">
+          <div class="layer">
+            <h3>Smart Attendance System</h3>
+            <p>This website is designed to take Attendance dynamically and notify them about the shortage of their Attendance.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/work3.jpg">
+          <div class="layer">
+            <h3>Project 3</h3>
+            <p>Will be updated soon.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- ----------------contact------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-at"></i> nafish.ruet21@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 01739336741</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/nafishahamed.apu"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/ApuNafish"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/nafish-ahamed-apu/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            
+          </div>
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="b047b2cc-6b45-4ff1-80cf-ffc68b9166e0">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Nafish. All rights reserved.</p>
+      </div>      
+    </div>
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemeu.style.right ="0";
+    }
+    function closemenu(){
+      sidemeu.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>
