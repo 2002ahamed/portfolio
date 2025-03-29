@@ -208,16 +208,17 @@ nav ul li a:hover::after{
 }
 .cv_button{
     display: block;
-    margin: 50px auto;
+    margin: 50px ;
     width: fit-content;
     border: 1px solid #36B0FD;
-    padding: 14px 50px;
+    padding: 12px ;
     border-radius: 6px;
     text-decoration: none;
     color: #fff; 
     position: relative;
     z-index: 5;
     transition: background 0.5s;
+    margin-left: 0;
 }
 .cv_button:hover{
     background: #00A8E8;
