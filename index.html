@@ -14,22 +14,38 @@
             <a href="index.html">
                 <img src="images/logo.jpg" class="logo" alt="Home">
             </a>
-            <ul id="sidemenu">
+            <ul class="sidebar">
+              <li class="menu-off" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
               <li><a href="#header">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skill">Skills</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#project">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
-              <!-- <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i> -->
-            </ul>
-            <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+          </ul>
+          <ul>
+            <li class="hideOnMobile"><a href="#header">Home</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#skill">Skills</a></li>
+            <li class="hideOnMobile"><a href="#services">Services</a></li>
+            <li class="hideOnMobile"><a href="#project">Projects</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+          </ul>    
         </nav>
         <div class="header-text">
           <p>Aspiring Data Scientist</p>
           <h1>Hello, This is <span>Nafish</span> <br>Ahamed Apu From Bangladesh</h1>
         </div>
-        <a href="images/Nafish_Ahamed_Apu_Resume.pdf" download class="btn btn2">Download CV</a>
+        <a href="https://drive.google.com/file/d/1kQNRkKqqzMgBvne_ftqYMMlwvw4zsYKe/view?usp=sharing" class="cv_button">Check My CV</a>
+        <!-- <button class="btn btn2" id="cvButton">Check My CV</button> -->
+        <!-- <button onclick="window.open('https://drive.google.com/file/d/1kQNRkKqqzMgBvne_ftqYMMlwvw4zsYKe/view?usp=sharing', '_blank')" class="btn btn2">Check CV</button> -->
+        <!-- <a href="https://drive.google.com/file/d/1kQNRkKqqzMgBvne_ftqYMMlwvw4zsYKe/view?usp=sharing" 
+   class="btn btn2" 
+   target="_blank" 
+   rel="noopener noreferrer">
+   Check My CV
+</a> -->
     </div>
   </div> 
 <!--   -----------------about---------- -->
@@ -351,15 +367,34 @@
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab");
     }
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-      sidemeu.style.right ="0";
-    }
-    function closemenu(){
-      sidemeu.style.right = "-200px";
-    }
   </script>
+  <script>
+    function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    const menuButton = document.querySelector('.menu-button');
 
+    sidebar.style.display = 'flex';
+    menuButton.style.display = 'none'; // Hide menu button
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    const menuButton = document.querySelector('.menu-button');
+
+    sidebar.style.display = 'none';
+    menuButton.style.display = 'block'; // Show menu button
+}
+document.querySelectorAll('.sidebar a').forEach(item => {
+    item.addEventListener('click', hideSidebar);
+});
+
+  </script>
+  <!-- <script>
+    document.getElementById("cvButton").addEventListener("click", function () {
+      window.open("https://drive.google.com/file/d/1kQNRkKqqzMgBvne_ftqYMMlwvw4zsYKe/view?usp=sharing", "_blank");
+    });
+  </script> -->
+
+  <!-- <script src="script.js"></script> -->
 </body>
 </html>

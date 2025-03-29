@@ -33,7 +33,62 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/* nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  nav a:hover{
+    background-color: #f0f0f0;
+  } */
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #00A8E8;
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 600px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+     /* .btn.btn2{
+        display: block;  
+        width: auto;
+    } */
 
+  }
+  /* @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  } */
 .logo{
     width: 140px;
 }
@@ -150,6 +205,22 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+.cv_button{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #36B0FD;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff; 
+    position: relative;
+    z-index: 10;
+    transition: background 0.5s;
+}
+.cv_button:hover{
+    background: #00A8E8;
+}
 
 /* --------------------------------------certifications------------------------------------- */
 .cert-container {
@@ -223,7 +294,7 @@ nav ul li a:hover::after{
 }
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Max 4 per row */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Max 4 per row */
     gap: 20px;
     justify-content: center;
     padding: 20px;
@@ -501,9 +572,9 @@ form .btn2{
 }
 /* ---------------------css for small screen----------------- */
 
-nav .fas{
+/* nav .fa-solid{
     display: none;
-}
+}  */
 @media only screen and (max-width: 600px) {
     #header{
         background-image: url(images/phone-background.png);
@@ -512,7 +583,6 @@ nav .fas{
         margin-top: 90%;
         font-size: 16px;
     }
-    
 /* Add an overlay */
 #header::before {
     content: "";
@@ -538,33 +608,40 @@ nav .fas{
     .header-text h1 span{
         color: #00FFFF;
     }
-    nav .fas{
+     /* nav .fa-solid{
         display: block;
         font-size: 25px;
-    }
-    nav ul{
+    } */
+    
+    /* nav ul{
         background: #00A8E8;
         position: fixed;
         top: 0;
-        
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
     }
+   
     nav ul li{
         display: block;
         margin: 25px;
     }
+     
     #sidemenu {
         right: -200px !important;
       }      
-    nav ul .fas{
+    
+     nav ul .fa-solid{
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
+    } */
+    .about-col-2 p {
+        font-size: 14px; /* Adjust the size as needed */
     }
     .sub-title{
         font-size: 40px;
@@ -587,6 +664,6 @@ nav .fas{
     }
     .copyright{
         font-size: 14px;
-    }
+    } 
 }
 
